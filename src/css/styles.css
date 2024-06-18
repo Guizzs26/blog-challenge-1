@@ -38,7 +38,7 @@ body {
   background-color: var(--dark-10);
 }
 
-/*  */
+/* Reusable styles */
 
 h1,
 h2,
@@ -49,11 +49,10 @@ h6 {
   font-family: "Space Grotesk", sans-serif;
 }
 
-/*  */
+/* Top-container layout */
 
-.top-container {
+.header {
   max-width: 100%;
-  height: 28.3rem;
 
   text-align: center;
 
@@ -62,7 +61,9 @@ h6 {
   background-color: var(--dark-20);
 }
 
-.heading {
+/* Top-container content styles */
+
+.blog-title {
   font-size: 4rem;
   font-weight: 500;
   line-height: 51.04px;
@@ -72,11 +73,11 @@ h6 {
   color: var(--white);
 }
 
-.heading span {
+.blog-title span {
   color: var(--brand-color);
 }
 
-.input-blog {
+.search-input {
   width: 121.6rem;
   height: 5.6rem;
 
@@ -86,13 +87,84 @@ h6 {
   border: 2px solid var(--dark-40);
   border-radius: 8px;
 
+  color: #fff;
   background-color: var(--dark-30);
 }
 
-.input-blog::placeholder {
+.search-input::placeholder {
   font-size: 2rem;
   font-weight: 500;
   line-height: 24.2px;
 
   color: var(--gray);
+}
+
+/* Blog container layout */
+
+/* Blog container content styles */
+
+.main-content {
+  width: 121.6rem;
+  height: 96.9rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+/*  */
+
+.post {
+  width: 121.6rem;
+  height: 24.3rem;
+
+  padding: 4rem;
+  border-radius: 8px;
+
+  background-color: var(--dark-20);
+}
+
+.selected-post {
+  border: 2px solid var(--brand-color);
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-date {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 19.36px;
+
+  margin-bottom: 2.65rem;
+
+  color: var(--brand-color);
+}
+
+.post-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 30.62px;
+
+  margin-bottom: 1.6rem;
+
+  color: var(--white);
+}
+
+.post-text {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 32px;
+
+  color: var(--gray);
+}
+
+.post-icon {
+  stroke: #e07b67;
 }
