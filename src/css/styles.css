@@ -1,4 +1,8 @@
+/* Fonts */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+/* Variables */
 
 :root {
   --brand-color: #e07b67;
@@ -12,9 +16,29 @@
   --white: #ffffff;
 }
 
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+
+  background-color: var(--dark-10);
 }
+
+/*  */
 
 h1,
 h2,
@@ -23,4 +47,52 @@ h4,
 h5,
 h6 {
   font-family: "Space Grotesk", sans-serif;
+}
+
+/*  */
+
+.top-container {
+  max-width: 100%;
+  height: 28.3rem;
+
+  text-align: center;
+
+  padding: 6.4rem 0;
+
+  background-color: var(--dark-20);
+}
+
+.heading {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 51.04px;
+
+  margin-bottom: 4.8rem;
+
+  color: var(--white);
+}
+
+.heading span {
+  color: var(--brand-color);
+}
+
+.input-blog {
+  width: 121.6rem;
+  height: 5.6rem;
+
+  text-align: left;
+
+  padding: 1.6rem 2.4rem;
+  border: 2px solid var(--dark-40);
+  border-radius: 8px;
+
+  background-color: var(--dark-30);
+}
+
+.input-blog::placeholder {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 24.2px;
+
+  color: var(--gray);
 }
