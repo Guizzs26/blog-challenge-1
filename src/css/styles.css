@@ -172,3 +172,11 @@ h6 {
 
   color: var(--gray);
 }
+
+/*  */
+
+#icon {
+  stroke: #e07b67;
+
+  cursor: pointer;
+}
