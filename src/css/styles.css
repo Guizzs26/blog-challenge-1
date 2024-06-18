@@ -49,10 +49,10 @@ h6 {
   font-family: "Space Grotesk", sans-serif;
 }
 
-/* Top-container layout */
+/* Header layout */
 
 .header {
-  max-width: 100%;
+  width: 100%;
 
   text-align: center;
 
@@ -61,7 +61,7 @@ h6 {
   background-color: var(--dark-20);
 }
 
-/* Top-container content styles */
+/* Header content styles */
 
 .blog-title {
   font-size: 4rem;
@@ -79,7 +79,6 @@ h6 {
 
 .search-input {
   width: 121.6rem;
-  height: 5.6rem;
 
   text-align: left;
 
@@ -87,7 +86,7 @@ h6 {
   border: 2px solid var(--dark-40);
   border-radius: 8px;
 
-  color: #fff;
+  color: var(--gray);
   background-color: var(--dark-30);
 }
 
@@ -96,12 +95,12 @@ h6 {
   font-weight: 500;
   line-height: 24.2px;
 
+  align-items: left;
+
   color: var(--gray);
 }
 
 /* Blog container layout */
-
-/* Blog container content styles */
 
 .main-content {
   width: 121.6rem;
@@ -115,17 +114,18 @@ h6 {
   padding: 8rem 0;
 }
 
-/*  */
+/* Post element layout */
 
 .post {
   width: 121.6rem;
-  height: 24.3rem;
 
   padding: 4rem;
   border-radius: 8px;
 
   background-color: var(--dark-20);
 }
+
+/* Blog container content styles */
 
 .selected-post {
   border: 2px solid var(--brand-color);
@@ -137,9 +137,14 @@ h6 {
   align-items: center;
 }
 
+.post-date,
+.post-title,
+.post-text {
+  font-weight: 500;
+}
+
 .post-date {
   font-size: 1.6rem;
-  font-weight: 500;
   line-height: 19.36px;
 
   margin-bottom: 2.65rem;
@@ -147,9 +152,13 @@ h6 {
   color: var(--brand-color);
 }
 
+.post-content {
+  width: 113.6rem;
+  height: auto;
+}
+
 .post-title {
   font-size: 2.4rem;
-  font-weight: 500;
   line-height: 30.62px;
 
   margin-bottom: 1.6rem;
@@ -159,12 +168,7 @@ h6 {
 
 .post-text {
   font-size: 2rem;
-  font-weight: 500;
   line-height: 32px;
 
   color: var(--gray);
-}
-
-.post-icon {
-  stroke: #e07b67;
 }
