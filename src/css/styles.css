@@ -103,21 +103,22 @@ h6 {
 /* Blog container layout */
 
 .main-content {
-  width: 121.6rem;
-  height: 96.9rem;
+  width: 100%;
+  max-width: 121.6rem;
+  height: auto;
 
   display: flex;
   flex-direction: column;
   gap: 4rem;
 
   margin: 0 auto;
-  padding: 8rem 0;
+  padding: 8rem 2rem;
 }
 
 /* Post element layout */
 
 .post {
-  width: 121.6rem;
+  width: 100%;
 
   padding: 4rem;
   border-radius: 8px;
@@ -153,8 +154,7 @@ h6 {
 }
 
 .post-content {
-  width: 113.6rem;
-  height: auto;
+  width: 100%;
 }
 
 .post-title {
