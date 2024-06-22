@@ -41,20 +41,18 @@ body {
 /* Reusable styles */
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: "Space Grotesk", sans-serif;
 }
 
 /* Header layout */
 
 .header {
-  width: 100%;
-
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
 
   padding: 6.4rem 0;
 
@@ -68,8 +66,6 @@ h6 {
   font-weight: 500;
   line-height: 51.04px;
 
-  margin-bottom: 4.8rem;
-
   color: var(--white);
 }
 
@@ -80,22 +76,19 @@ h6 {
 .search-input {
   width: 121.6rem;
 
-  text-align: left;
-
   padding: 1.6rem 2.4rem;
   border: 2px solid var(--dark-40);
   border-radius: 8px;
 
-  color: var(--gray);
+  color: var(--white);
   background-color: var(--dark-30);
 }
 
 .search-input::placeholder {
   font-size: 2rem;
   font-weight: 500;
+  text-align: left;
   line-height: 24.2px;
-
-  align-items: left;
 
   color: var(--gray);
 }
@@ -103,39 +96,49 @@ h6 {
 /* Blog container layout */
 
 .main-content {
-  width: 100%;
   max-width: 121.6rem;
-  height: auto;
+  height: 96.9rem;
 
   display: flex;
   flex-direction: column;
   gap: 4rem;
 
   margin: 0 auto;
-  padding: 8rem 2rem;
+  padding: 8rem 0;
 }
 
 /* Post element layout */
 
 .post {
-  width: 100%;
-
   padding: 4rem;
   border-radius: 8px;
+
+  transition: transform 0.3s ease;
+  cursor: pointer;
 
   background-color: var(--dark-20);
 }
 
-/* Blog container content styles */
+.post:hover {
+  transform: scale(1.05);
+}
 
 .selected-post {
   border: 2px solid var(--brand-color);
 }
 
+/* Blog container content styles */
+
+/* Date and Heart icon box layout and styles */
+
 .post-meta {
+  height: 3.2rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 2rem;
 }
 
 .post-date,
@@ -145,17 +148,15 @@ h6 {
 }
 
 .post-date {
+  height: 1.9rem;
+
   font-size: 1.6rem;
   line-height: 19.36px;
-
-  margin-bottom: 2.65rem;
 
   color: var(--brand-color);
 }
 
-.post-content {
-  width: 100%;
-}
+/*  */
 
 .post-title {
   font-size: 2.4rem;
@@ -176,7 +177,5 @@ h6 {
 /*  */
 
 #icon {
-  stroke: #e07b67;
-
   cursor: pointer;
 }
