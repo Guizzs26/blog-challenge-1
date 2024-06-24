@@ -50,8 +50,8 @@ h2 {
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 4.8rem;
 
   padding: 6.4rem 0;
@@ -64,8 +64,7 @@ h2 {
 .blog-title {
   font-size: 4rem;
   font-weight: 500;
-  line-height: 51.04px;
-
+  line-height: 1.275;
   color: var(--white);
 }
 
@@ -74,7 +73,8 @@ h2 {
 }
 
 .search-input {
-  width: 121.6rem;
+  width: 100%;
+  max-width: 121.6rem;
 
   padding: 1.6rem 2.4rem;
   border: 2px solid var(--dark-40);
@@ -87,8 +87,7 @@ h2 {
 .search-input::placeholder {
   font-size: 2rem;
   font-weight: 500;
-  text-align: left;
-  line-height: 24.2px;
+  line-height: 1.2;
 
   color: var(--gray);
 }
@@ -114,7 +113,6 @@ h2 {
   border-radius: 8px;
 
   transition: transform 0.3s ease;
-  cursor: pointer;
 
   background-color: var(--dark-20);
 }
@@ -132,8 +130,6 @@ h2 {
 /* Date and Heart icon box layout and styles */
 
 .post-meta {
-  height: 3.2rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,19 +144,15 @@ h2 {
 }
 
 .post-date {
-  height: 1.9rem;
-
   font-size: 1.6rem;
-  line-height: 19.36px;
+  line-height: 1.2;
 
   color: var(--brand-color);
 }
 
-/*  */
-
 .post-title {
   font-size: 2.4rem;
-  line-height: 30.62px;
+  line-height: 1.275;
 
   margin-bottom: 1.6rem;
 
@@ -169,7 +161,7 @@ h2 {
 
 .post-text {
   font-size: 2rem;
-  line-height: 32px;
+  line-height: 1.6;
 
   color: var(--gray);
 }
